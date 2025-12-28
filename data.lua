@@ -181,12 +181,12 @@ data:extend({
 		order = "b[agriculture]-a[carbonut]b",
 		--stack_size = 50,
 		stack_size = 100,
-		fuel_value = "5MJ",
+		--fuel_value = "5MJ",
 		--spoil_result = "spoilage",
 		weight = 1 * kg,
 		--spoil_ticks = 3 * hour,
 		default_import_location = "vulcanus",
-		fuel_category = "chemical",
+		--fuel_category = "chemical",
 		inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
 		pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
 		drop_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -202,7 +202,7 @@ data:extend({
 		order = "b[agriculture]-a[carbonut]a",
 		group = "intermediate-products",
 		subgroup = "agriculture-processes",
-		enabled = true,
+		enabled = false,
 		allow_productivity = true,
 		energy_required = 1,
 		ingredients = {
@@ -238,7 +238,7 @@ data:extend({
 		subgroup = "fluid-recipes",
 		category = "chemistry",
 		order = "a[sufulr]-a[sulfuric-acid-reduction]",
-		enabled = true,
+		enabled = false,
 		allow_productivity = false,
 		energy_required = 10,
 		ingredients = {
@@ -332,12 +332,3 @@ if agricultural_tower and agricultural_tower.surface_conditions then
 		end
 	end
 end
-
-table.insert(
-	data.raw["tree"]["ashland-lichen-tree"].minable.results,
-	{ type = "item", name = "carbonut-seed", amount_min = 0, amount_max = 1 }
-)
-table.insert(
-	data.raw["tree"]["ashland-lichen-tree-flaming"].minable.results,
-	{ type = "item", name = "carbonut-seed", amount_min = 0, amount_max = 1 }
-)

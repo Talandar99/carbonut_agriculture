@@ -53,3 +53,12 @@ if carbonut then
 		tile_restriction = { "lava", "lava-hot" },
 	}
 end
+
+table.insert(
+	data.raw["tree"]["ashland-lichen-tree"].minable.results,
+	{ type = "item", name = "carbonut-seed", amount_min = 0, amount_max = 1 }
+)
+table.insert(
+	data.raw["tree"]["ashland-lichen-tree-flaming"].minable.results,
+	{ type = "item", name = "carbonut-seed", amount_min = 0, amount_max = 1 }
+)
