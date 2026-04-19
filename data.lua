@@ -314,6 +314,7 @@ data:extend({
 		effects = {
 			{ type = "unlock-recipe", recipe = "carbonut-sulfuric-acid-reduction" },
 			{ type = "unlock-recipe", recipe = "carbonut-cracking" },
+			{ type = "unlock-recipe", recipe = "coal-synthesis" },
 		},
 		prerequisites = { "planet-discovery-vulcanus" },
 		research_trigger = {

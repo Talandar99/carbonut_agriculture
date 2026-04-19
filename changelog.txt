@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2025-12-28
+  Changes:
+    - Carbonut agriculture technology now unlocks "coal synthesis" recipe to prevent softlock
+      with Lignumis + Any Planet Start (Vulcanus) + Carbonut Agriculture mod combination
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2025-12-28
   Bugfixes:
