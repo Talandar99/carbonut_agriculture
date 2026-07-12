@@ -1,15 +1,15 @@
 {
     "name": "carbonut_agriculture",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "title": "Carbonut Agriculture",
     "author": "Talandar",
     "dependencies": [
-        "base >= 2.0",
+        "base >= 2.1",
         "space-age",
         "? lignumis",
         "? pelagos"
     ],
     "description": "Overhauls the way coal is obtained on Vulcanus. Instead of ore patches, you farm lava-grown carbonuts and rely on coal synthesis",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "space_travel_required": true
 }
