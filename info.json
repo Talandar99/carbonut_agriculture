@@ -1,7 +1,7 @@
 {
-    "name": "carbonut_agriculture",
+    "name": "carbonut_agriculture_yf",
     "version": "0.5.0",
-    "title": "Carbonut Agriculture",
+    "title": "Carbonut Agriculture - Yessica_'s Fork",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.1",
