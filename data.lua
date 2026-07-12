@@ -198,7 +198,7 @@ data:extend({
 			{ icon = "__carbonut_agriculture__/graphics/carbonut.png", icon_size = 64 },
 			{ icon = "__base__/graphics/icons/fluid/steam.png", icon_size = 64, scale = 0.3, shift = { 8, 8 } },
 		},
-		category = "crafting-with-fluid-or-metallurgy",
+		categories = {"crafting-with-fluid", "metallurgy"},
 		order = "b[agriculture]-a[carbonut]a",
 		group = "intermediate-products",
 		subgroup = "agriculture-processes",
@@ -211,7 +211,7 @@ data:extend({
 			{ type = "fluid", name = "steam", amount = 10 },
 		},
 		results = {
-			{ type = "item", name = "carbonut-seed", amount = 1, probability = 0.10 },
+			{ type = "item", name = "carbonut-seed", amount = 1, independent_probability = 0.10 },
 			{ type = "item", name = "carbon", amount = 5 },
 		},
 		crafting_machine_tint = {
@@ -236,7 +236,7 @@ data:extend({
 		},
 		group = "intermediate-products",
 		subgroup = "fluid-recipes",
-		category = "chemistry",
+		categories = {"chemistry"},
 		order = "a[sufulr]-a[sulfuric-acid-reduction]",
 		enabled = false,
 		allow_productivity = false,
@@ -319,7 +319,7 @@ data:extend({
 		prerequisites = { "planet-discovery-vulcanus" },
 		research_trigger = {
 			type = "mine-entity",
-			entity = "ashland-lichen-tree",
+			entities = {"ashland-lichen-tree"},
 		},
 	},
 })
