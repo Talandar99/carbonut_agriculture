@@ -1,7 +1,7 @@
 {
-    "name": "carbonut_agriculture_yf",
+    "name": "carbonut_agriculture",
     "version": "0.5.0",
-    "title": "Carbonut Agriculture - Yessica_'s Fork",
+    "title": "Carbonut Agriculture",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.1",
@@ -9,7 +9,7 @@
         "? lignumis",
         "? pelagos"
     ],
-    "description": "Overhauls the way coal is obtained on Vulcanus. Instead of ore patches, you farm lava-grown carbonuts and rely on coal synthesis (forked by Yessica_ for 2.1)",
+    "description": "Overhauls the way coal is obtained on Vulcanus. Instead of ore patches, you farm lava-grown carbonuts and rely on coal synthesis",
     "factorio_version": "2.1",
     "space_travel_required": true
 }
