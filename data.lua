@@ -169,7 +169,7 @@ data:extend({
 		stack_size = 10,
 		default_import_location = "vulcanus",
 		weight = 10 * kg,
-		fuel_category = "chemical",
+		fuel_categories = { "chemical" },
 		fuel_value = "4MJ",
 	},
 	{
@@ -198,7 +198,7 @@ data:extend({
 			{ icon = "__carbonut_agriculture__/graphics/carbonut.png", icon_size = 64 },
 			{ icon = "__base__/graphics/icons/fluid/steam.png", icon_size = 64, scale = 0.3, shift = { 8, 8 } },
 		},
-		category = "crafting-with-fluid-or-metallurgy",
+		categories = {"crafting-with-fluid", "metallurgy"},
 		order = "b[agriculture]-a[carbonut]a",
 		group = "intermediate-products",
 		subgroup = "agriculture-processes",
@@ -211,7 +211,7 @@ data:extend({
 			{ type = "fluid", name = "steam", amount = 10 },
 		},
 		results = {
-			{ type = "item", name = "carbonut-seed", amount = 1, probability = 0.10 },
+			{ type = "item", name = "carbonut-seed", amount = 1, independent_probability = 0.10 },
 			{ type = "item", name = "carbon", amount = 5 },
 		},
 		crafting_machine_tint = {
@@ -236,7 +236,7 @@ data:extend({
 		},
 		group = "intermediate-products",
 		subgroup = "fluid-recipes",
-		category = "chemistry",
+		categories = {"chemistry"},
 		order = "a[sufulr]-a[sulfuric-acid-reduction]",
 		enabled = false,
 		allow_productivity = false,
@@ -249,7 +249,7 @@ data:extend({
 			{ type = "item", name = "sulfur", amount = 1 },
 			{ type = "fluid", name = "water", amount = 10 },
 		},
-		{
+		crafting_machine_tint = {
 			primary = { r = 1.000, g = 0.958, b = 0.000, a = 1.000 }, -- #fff400ff
 			secondary = { r = 1.000, g = 0.852, b = 0.172, a = 1.000 }, -- #ffd92bff
 			tertiary = { r = 0.876, g = 0.869, b = 0.597, a = 1.000 }, -- #dfdd98ff
@@ -319,7 +319,7 @@ data:extend({
 		prerequisites = { "planet-discovery-vulcanus" },
 		research_trigger = {
 			type = "mine-entity",
-			entity = "ashland-lichen-tree",
+			entities = {"ashland-lichen-tree"},
 		},
 	},
 })
