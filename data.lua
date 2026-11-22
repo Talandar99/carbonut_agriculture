@@ -169,7 +169,7 @@ data:extend({
 		stack_size = 10,
 		default_import_location = "vulcanus",
 		weight = 10 * kg,
-		fuel_category = "chemical",
+		fuel_categories = { "chemical" },
 		fuel_value = "4MJ",
 	},
 	{
@@ -249,7 +249,7 @@ data:extend({
 			{ type = "item", name = "sulfur", amount = 1 },
 			{ type = "fluid", name = "water", amount = 10 },
 		},
-		{
+		crafting_machine_tint = {
 			primary = { r = 1.000, g = 0.958, b = 0.000, a = 1.000 }, -- #fff400ff
 			secondary = { r = 1.000, g = 0.852, b = 0.172, a = 1.000 }, -- #ffd92bff
 			tertiary = { r = 0.876, g = 0.869, b = 0.597, a = 1.000 }, -- #dfdd98ff
